@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Newton's Binomial I Think</title>
+		<script type="text/javascript" src="./ShortHandMulti.js"></script>
+		<link rel="stylesheet" href="./stylish.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				Rami's (a+b)<sup>n</sup> Generator!
+			</div>
+			<hr>
+			<div id="userInput">
+				(
+				<input type="text" maxlength="1" value="a" class="rInput" id="a">
+				
+				<select name="symbols" id="symbols">
+					<option value="+">+</option>
+					<option value="-">-</option>
+				</select>
+				
+				<input type="text" maxlength="1" value="b" class="rInput" id="b">
+				)
+				<sup>
+					<input type="text" value="2" id="pow">
+				</sup>
+				<br />
+				
+				<input type="button" value="Calculate!"
+					onclick="writeBinomial('binomial', 'a', 'b', 'pow', 'symbols')" class="rBtn">
+				
+				<input type="button" value="GNB" onclick="writeBiomialLine('binomial', 'pow')" class="rBtn">
+			</div>
+			<div id="binomial">
+				Choose your letters, power and symbol to generate the formula. Have fun!
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+#header {
+	font-family: 'Consolas';
+	text-align: center;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-family: 'Consolas';
+	font-size: 22pt;
+}
+
+#userInput {
+	text-align: center;
+	font-size: 28pt;
+}
+
+#binomial {
+	text-align: center;
+}
+
+.rInput {
+	margin-left: 0;
+	margin-right: 0;
+	font-family: 'Consolas';
+	font-size: 22pt;
+	width: 22pt;
+	text-align: center;
+}
+
+.rBtn {
+	font-family: 'Consolas';
+	font-size: 16pt;
+}
+
+#pow {
+	font-family: 'Consolas';
+	font-size: 16pt;
+	width: 32pt;
+	text-align: center;
+}
+
+#symbols {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 18pt;
+}
