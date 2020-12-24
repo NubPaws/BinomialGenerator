@@ -5,7 +5,8 @@ n = 4 | p = 1
 n = 4 | p = 2
 n = 4 | p = 3
 */
-const binome = (n, p = 0, memo = {}) => {
+let memo = {};
+const binome = (n, p = 0) => {
 	if (n == 0 || p == 0 || p == n)
 		return 1;
 	if (p == 1 || p == n - 1)
@@ -15,7 +16,7 @@ const binome = (n, p = 0, memo = {}) => {
 	if (key in memo)
 		return memo[key];
 	
-	memo[key] = binome(n -1, p -1, memo) + binome(n -1, p, memo);
+	memo[key] = binome(n -1, p -1) + binome(n -1, p);
 	return memo[key];
 };
 
