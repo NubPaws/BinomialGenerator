@@ -80,7 +80,7 @@ const writeBiomialLine = (elementID, lnNumElem) => {
 	const lnNum = parseInt(document.getElementById(lnNumElem).value);
 	
 	element.innerHTML = "";
-	for (let i = 0; i < lnNum; i++) {
+	for (let i = 0; i <= lnNum; i++) {
 		element.innerHTML += `${generateBinomialLine(i)}<br />`;
 	}
 };
